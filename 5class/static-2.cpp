@@ -2,8 +2,12 @@
 
 using namespace std;
 
+// 声明函数
+void func();
+
 static int count = 25;
 
+// 定义函数
 void func() {
     static int i = 8;
     i++;
@@ -11,6 +15,7 @@ void func() {
     cout << " 变量 count 为 " << count << endl;
 }
 
+//static 存储类
 int main() {
     while (count--) {
         func();
