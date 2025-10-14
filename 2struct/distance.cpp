@@ -6,6 +6,7 @@ struct Distance {
     float inch;
 };
 
+// 结构体指针
 int main() {
     Distance *ptr, d;
     ptr = &d;
