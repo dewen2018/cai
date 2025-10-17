@@ -11,6 +11,23 @@ void Swap(T &a, T &b) {
     b = temp;
 }
 
+template<typename T>
+void Swap(T *a, T *b) {
+    T temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+template<typename T>
+void Swap(T &a, T &b, T &c) {
+    T temp;
+    temp = a;
+    a = b;
+    b = c;
+    c = temp;
+}
+
 int main() {
     int a = 10, b = 20;
     cout << "Before Swap: a=" << a << " b=" << b << endl;
