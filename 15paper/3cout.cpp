@@ -7,6 +7,8 @@ int main() {
     // 定义整型变量并赋值
     int a = 234;
 
+    // 设置为十六进制输出
+    // cout.setf(ios::hex, ios::basefield);
     // 设置输出为十进制格式
     cout.setf(ios::dec, ios::basefield);
     cout << a << endl;
